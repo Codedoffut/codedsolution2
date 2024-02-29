@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution module 2</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+    }
+    h1{
+        color: black;
+        text-align: center;
+        margin: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    section{
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+    p {
+        position: relative;
+        clear: right;
+    }
+    div {
+        position: relative;
+        background-color: yellow;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+    .first{
+        float: right;
+        width: 100px;
+        font-size: 125%;
+        font-weight: bold;
+        padding: 6px;
+        border: 1px solid black;
+        background-color: green;
+        text-align: center;
+        margin: 0px;
+    }
+    .second{
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: blue;
+    }
+    .third{
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        color: brown;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: pink;
+    }
+    .notes{
+        padding: 5px;
+        border: none;
+        background-color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        height: 200px;
+        overflow: auto;
+
+    }
+        /* for desktops */
+    @media (min-width: 992px) {
+        .one1 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+    /* for tablets */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .two2 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .four4 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /* for mobile devices */
+    @media (max-width: 767px) {
+        .three3 {
+            float: left;
+            width: 100%;
+        }
+    }
+
+</style>
+<body>
+    <h1>OUR MENU</h1>
+    <section class="one1 two2 three3">
+        <div>
+            <p class="first">Chicken</p>
+            <p class="notes">Pay attention to the spacing shown in the mockup illustrations. Note the spacing between sections (both horizontal and vertical)
+                . Note the horizontal spacing between the edges of the section and the edges of the browser window. Also, note the spacing between the 
+                dummy text in each section and the edges of the section. Lastly, make sure the dummy text is "pushed down" enough so it doesn't overlap
+                 the section title region. (Hint: use margins and padding and use border-box as your box-sizing as discussed in Lecture 19.)</p>
+        </div>
+    </section>
+    <section class="one1 two2 three3">
+        <div>
+            <p class="second">Beef</p>
+            <p class="notes">Each section should have a section title region that is always positioned at the top right corner of
+                 the section no matter the view (desktop, tablet or mobile). Copy the titles from the mockup 
+                 illustration (i.e., Chicken, Beef, Sushi)  or come up with your own. (Hint: use relative and absolute positioning and offsets as discussed in Lecture 22.)</p>
+        </div>
+    </section>
+    <section class="one1 four4 three3">
+        <div>
+            <p class="third">sushi</p>
+            <p class="notes">(OPTIONAL) You will NOT be graded on this, but you may want to explicitly set a font-family for the text in your page,
+                 so you are not stuck with the default browser font family. Also, set the font size of the heading and section title
+                  to be 75% larger and 25% larger (respectively) than the font size of the dummy text.</p>
+        </div>
+    </section>
+</body>
+</html>
